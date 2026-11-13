@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#F2F2F7">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Dappl Hub</title>
+<!-- Lets Chrome install the kiosk as its own full-screen landscape app (⋮ → Install app). -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="kiosk.css?v=20261113135940">
+</head>
+<body>
+<!-- The whole kiosk is one 16:9-ish screen. kiosk.js draws each screen into #screen. -->
+<main id="screen" class="kscreen" aria-live="polite"></main>
+<div id="modal" class="kconfirm" role="dialog" aria-modal="true"></div>
+<script type="module" src="kiosk.js?v=20261113135940"></script>
+</body>
+</html>
